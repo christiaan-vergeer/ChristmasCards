@@ -10,6 +10,10 @@
         document.getElementById("main").src = url;
     }
 
+    function textInput(src) {
+        document.getElementById("CardText").value = src
+    }
+
 </script>
 
 <div class="text-center">
@@ -35,9 +39,25 @@
         </div>
         <div class="col-sm" style="text-align:center">
             <img id="main" src="~/Images/WhiteSpace.jpg" width="350" height="490" />
+            <input type="text" id="CardText" value="" disabled="disabled" style="text-align:center;"/>
         </div>
         <div class="col-sm" style="text-align:right">
-            <select asp-for="Fonttype" asp-items="Html.GetEnumSelectList<fonttype>()" />
+            Select Font<br />
+            <select asp-for="Fonttype" asp-items="Html.GetEnumSelectList<fonttype>()"> </select>
+            <br />
+            <br />
+            <br />
+            Text on card<br />
+            <input type="text" id="InputText" name="Name" onkeyup="textInput(value)" onchange="textInput(value)"/>
         </div>
     </div>
 </div>
+
+
+<style>
+    #CardText {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        outline: none;
+    }
+</style>

@@ -22,8 +22,8 @@ namespace ChristmasCards.Models
 
     public enum fonttype
     {
-        Times_New_Roman,
-        Comic_Sans,
-        IOnlyKnow2FontTypes
+        Times_New_Roman = 1,
+        Comic_Sans = 2,
+        IOnlyKnow2FontTypes = 3
     }
 }
