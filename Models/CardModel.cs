@@ -7,15 +7,15 @@ namespace ChristmasCards.Models
 {
     public class CardModel
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        //public image { get; set; }
+        //public Image { get; set; }
 
-        public string message { get; set; }
+        public string Message { get; set; }
 
-        public fonttype fonttype { get; set; }
+        public fonttype Fonttype { get; set; }
 
-        //public music { get; set; }
+        //public Music { get; set; }
     }
 
     public enum fonttype
