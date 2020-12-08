@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,12 +8,14 @@ namespace ChristmasCards.Models
 {
     public class CardModel
     {
+        [Key]
+        [Required]
         public int Id { get; set; }
-
-        //public Image { get; set; }
-
+        [Required]
+        public CardImages Image { get; set; }
+        [Required]
         public string Message { get; set; }
-
+        [Required]
         public fonttype Fonttype { get; set; }
 
         //public Music { get; set; }
