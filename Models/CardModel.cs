@@ -16,6 +16,8 @@ namespace ChristmasCards.Models
         public fonttype Fonttype { get; set; }
 
         //public Music { get; set; }
+
+        public ICollection<EmailModel> Emails { get; set; }
     }
 
     public enum fonttype
