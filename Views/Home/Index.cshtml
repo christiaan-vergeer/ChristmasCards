@@ -10,8 +10,8 @@
         document.getElementById("main").src = url;
     }
 
-    function textInput(src) {
-        document.getElementById("CardText").value = src
+    function textInput(value) {
+        document.getElementById("CardText").value = value
     }
 
 </script>
@@ -48,7 +48,7 @@
             <br />
             <br />
             Text on card<br />
-            <input type="text" id="InputText" name="Name" onkeyup="textInput(value)" onchange="textInput(value)"/>
+            <input type="text" id="InputText" asp-for="Message" onkeyup="textInput(value)" onchange="textInput(value)"/>
         </div>
     </div>
 </div>
